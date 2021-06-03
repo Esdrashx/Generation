@@ -1,23 +1,23 @@
-package  gen ;
-import  java.util. * ;
+package gen;
+import java.util.*;
 
-public  class  Ex5 {
+public class Ex5 {
 
-	public  static  void  main ( String [] args ) {
+	public static void main(String[] args) {
 		
-		Scanner in =  novo  Scanner ( System . In);
+		Scanner in = new Scanner(System.in);
 		
-		duplo  A , B , C ;
-		Sistema . para fora . println ( " Entre com a primeira nota: " );
-		A  = pol . nextDouble ();
-		Sistema . para fora . println ( " Entre com a segunda nota: " );
-		B  = pol . nextDouble ();
-		Sistema . para fora . println ( " Entre com a terceira nota: " );
-		C  = pol . nextDouble ();
+		double A, B, C;
+		System.out.println("Entre com a primeira nota: ");
+		A = in.nextDouble();
+		System.out.println("Entre com a segunda nota: ");
+		B = in.nextDouble();
+		System.out.println("Entre com a terceira nota: ");
+		C = in.nextDouble();
 		
-		Sistema . para fora . printf ( " A média ponderada das notas foi% .2f " , ( 2 * A +  3 * B  +  5 * C ) / 10,0 );
+		System.out.printf("A média ponderada das notas foi %.2f", (2*A+ 3*B + 5*C)/10.0);
 		
-		no . perto();
+		in.close();
 
 	}
 
