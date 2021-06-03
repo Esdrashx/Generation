@@ -1,0 +1,21 @@
+package  gen ;
+import  java.util. * ;
+
+public  class  Ex3 {
+
+	public  static  void  main ( String [] args ) {
+		
+		Scanner in =  novo  Scanner ( System . In);
+		Sistema . para fora . println ( " Entre com a quantidade de segundos: " );
+		int s = in . nextInt ();
+		
+		int h = s / 3600 ; s % =  3600 ;
+		int m = s / 60 ; s % =  60 ;
+		
+		Sistema . para fora . println ( " A duração foi de "  + h +  " hora (s) "  + m +  " minuto (s) "  + s +  " segundo (s) " );
+		
+		no . perto();
+		
+	}
+
+}
