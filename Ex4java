@@ -1,0 +1,30 @@
+package  gen ;
+import  java.util. * ;
+public  class  Ex4java {
+/*
+ 4. Uma empresa desenvolveu uma pesquisa para saber as características psicológicas dos indivíduos de uma região. 
+ Para tanto, a cada uma das pessoas era perguntado: idade, sexo (1-feminino / 2-masculino / 3-Outros), 
+ e as opções (1, se a pessoa era calma; 2, se a pessoa era nervosa e 3, se a pessoa era agressiva). 
+ Pede-se para elaborar um sistema que permita ler os dados de 150 pessoas, calcule e mostre: (WHILE)
+ */
+    public  static  void  main ( String [] args ) {
+        Scanner in =  novo  Scanner ( System . In);
+        int x =  5 , idade, sexo, temp, ans [] =  novo  int [ 6 ];
+        enquanto (x -  >  0 ) {
+            Sistema . para fora . println ( " Entre com a idade: " );
+            idade = em . nextInt ();
+            Sistema . para fora . println ( " Entre com o sexo (1 - Feminino / 2 - Masculino / 3 - Outro) " );
+            sexo = em . nextInt ();
+            Sistema . para fora . println ( " Entre com o temperamento (1 - Calmo / 2 - Nervoso / 3 - Agressivo) " );
+            temp = pol . nextInt ();
+            ans [ 0 ] + = (temp ==  1 ?  1  :  0 );
+            ans [ 1 ] + = (sexo ==  1  && temp ==  2 ?  1  :  0 );
+            ans [ 2 ] + = (sexo ==  2  && temp ==  3 ?  1  :  0 );
+            ans [ 3 ] + = (sexo ==  3  && temp ==  1 ?  1  :  0 );
+            ans [ 4 ] + = (idade >  40  && temp ==  2 ?  1  :  0 );
+            ans [ 5 ] + = (idade <  18  && temp ==  1 ?  1  :  0 );
+        }
+        Sistema . para fora . printf ( " O número de pessoas calmas é% d \ n O número de mulheres nervosas é:% d \ n O número de homens agressivos é:% d \ n O número de outros calmos é:% d \ n "  +
+                " O número de pessoas nervosas com mais de 40 anos é:% d \ n O número de pessoas calmas com menos de 18 anos é:% d " , ans [ 0 ], ans [ 1 ], ans [ 2 ], ans [ 3 ], ans [ 4 ], ans [ 5 ]);
+    }
+}
