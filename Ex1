@@ -1,0 +1,29 @@
+package  gen ;
+import  java.util. * ;
+/*
+ 1- Faça um programa que receba três inteiros e diga qual deles é o maior.
+ */
+
+public  class  Ex1 {
+
+    public  static  void  main ( String [] args ) {
+
+        Scanner in =  novo  Scanner ( System . In);
+
+        int n, m;
+        Sistema . para fora . println ( " Digite o primeiro número: " );
+        n = pol . nextInt ();
+        Sistema . para fora . println ( " Digite o segundo número: " );
+        m = pol . nextInt ();
+        se (m > n) n = m;
+        Sistema . para fora . println ( " Digite o terceiro número: " );
+        m = pol . nextInt ();
+        se (m > n) n = m;
+
+        Sistema . para fora . println ( " O maior número é: "  + n);
+
+        no . perto();
+
+    }
+
+}
