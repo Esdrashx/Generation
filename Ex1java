@@ -1,0 +1,16 @@
+package  gen ;
+import  java.util. * ;
+
+public  class  Ex1java {
+/*
+ 1. Informar todos os números de 1000 a 1999 que quando divididos por 11 obtemos resto = 5. (FOR)
+ */
+    public  static  void  main ( String [] args ) {
+
+        para ( int i =  1006 ; i <= 1999 ; i + = 11 ) {
+            Sistema . para fora . println (i);
+        }
+
+    }
+
+}
