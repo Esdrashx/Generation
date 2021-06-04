@@ -1,0 +1,21 @@
+package  gen ;
+import  java.util. * ;
+/*
+4- Faça um programa em que permita a entrada de um número qualquer e exiba se este número é par ou ímpar. 
+ Se for par exiba também a raiz quadrada do mesmo; se for ímpar exiba o número elevado ao quadrado.
+ */
+
+public  class  Ex4 {
+
+    public  static  void  main ( String [] args ) {
+
+        Scanner in =  novo  Scanner ( System . In);
+        int n;
+        Sistema . para fora . println ( " Entre com o seu número: " );
+        n = pol . nextInt ();
+        booleano ímpar = n % 2  ==  1 ;
+        Sistema . para fora . println ( " O número é "  + (ímpar ?  " ímpar "  :  " par " ) +  " e a sua "  + (ímpar ?  " segunda potência é "  +  Math . pow (n * 1.0 , 2 ) :  " raiz quadrada é "  +  Math . Sqrt (n * 1,0 )));
+
+    }
+
+}
