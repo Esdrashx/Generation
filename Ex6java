@@ -1,0 +1,23 @@
+package  gen ;
+import  java.util. * ;
+
+public  class  Ex6java {
+/*
+ 6. Escrever um programa que receba vários números inteiros no teclado. 
+ E no final imprimir a média dos números múltiplos de 3. Para sair digitar 0(zero).(DO...WHILE)
+ */
+    public  static  void  main ( String [] args ) {
+        Scanner in =  novo  Scanner ( System . In);
+
+        int x, soma =  0 , cnt =  0 ;
+        faça {
+            Sistema . para fora . println ( " Entre com o seu número: " );
+            x = pol . nextInt ();
+            soma + = (x % 3  ==  0 ? x :  0 );
+            cnt + = (x % 3  ==  0  && x ! =  0 ?  1  :  0 );
+        } enquanto (x ! =  0 );
+        
+        Sistema . para fora . println (( 1,0 * soma) / ( 1,0 * cnt));
+
+    }
+}
