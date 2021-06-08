@@ -2,7 +2,7 @@
 package Turma24;
 import java.util.Scanner;
 
-public class Ex2 
+public class ExArray2 
 /* 2- Faça um programa que receba 6 números inteiros e mostre: 
 • Os números pares digitados;  
 • A soma dos números pares digitados; 
