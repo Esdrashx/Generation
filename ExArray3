@@ -1,0 +1,28 @@
+package Turma24;
+
+import java.util.Scanner;
+
+public class ExArray3
+/* 3- Leia uma matriz 3 x 3, conte e escreva quantos valores maiores que 10 ela possui. */
+
+{
+
+    public static void main(String[] args){
+
+        int[][] matriz = new int [3][3];
+
+        Scanner in = new Scanner(System.in);
+
+        int ans = 0;
+        for(int b = 0; b<3; b++){
+            for(int a = 0; a<3; a++){
+                System.out.printf("\nEntre com o número da linha %d e coluna %d: ", b+1, a+1);
+                matriz[b][a] = in.nextInt(); ans += (matriz[b][a] > 10? 1: 0);
+            }
+        }
+
+        System.out.printf("\nA quantidade de valores maiores do que 10 é: %d", ans);
+
+    }
+
+}
