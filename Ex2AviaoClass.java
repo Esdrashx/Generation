@@ -10,7 +10,6 @@ public class Ex2AviaoClass {
 	//declaração dos atributos(variáveis de instância) da classe
 	private String modelo;
 	private String piloto;
-	private String aeromoca;
 	private String companhia;
 	private int assentos;
 	
@@ -70,5 +69,6 @@ public class Ex2AviaoClass {
 	
 	
 }
+
 
 
