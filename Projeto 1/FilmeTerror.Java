@@ -46,6 +46,15 @@ public class Terror extends Filme {
 			{
 			case 0:
 				System.out.println (""
+						+ "    
+						+ "───▄▄─▄████▄▐▄▄▄▌\r\n"
+						+ "──▐──████▀███▄█▄▌\r\n"
+						+ "▐─▌──█▀▌──▐▀▌▀█▀\r\n"
+						+ "─▀───▌─▌──▐─▌\r\n"
+						+ "─────█─█──▐▌█\r\n"
+						+ "                                                                                                                                                                                                                                                                                                     
+      
+						+ "");
 						
                             
 				break;
@@ -96,3 +105,4 @@ public class Terror extends Filme {
 		}
 
 }		
+
