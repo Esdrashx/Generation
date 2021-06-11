@@ -1,36 +1,29 @@
 package Turma24;
 
-public class Animal {
+public abstract class Animal {
 	
 	/*
 	1- Crie uma hierarquia de classes conforme abaixo com os seguintes atributos e comportamentos (observe a tabela), 
 	utilize os seus conhecimentos e distribua as características de forma que tudo o que for comum a todos os animais fique na classe Animal: 
 	 */
 	
-	private String nome;
-	private int idade;
+	private String tipoAnimal;
 
 	//Construtor
-	public Animal(String nome,int idade)
-	{
-		super();
-		this.nome = nome;
-		this.idade = idade;
-	}
+	abstract public void Nome(String nomeAnimal);
+	abstract public void Idade(int idadeAnimal);
+	abstract public void Som(String somAnimal);
+
 		
-	public String getNome() {
-		return nome;
+		public Animal(String tipoAnimal)
+	{
+		this.tipoAnimal = tipoAnimal;
 	}
-
-	public void setNome(String nome) {
-		this.nome = nome;
+	
+	public String getTipoAnimal() {
+		return tipoAnimal;
 	}
-
-	public int getIdade() {
-		return idade;
-	}
-
-	public void setIdade(int idade) {
-		this.idade = idade;
-	}
+	public void setTipoAnimal(String tipoAnimal) {
+		this.tipoAnimal = tipoAnimal;
+	}	
 }
