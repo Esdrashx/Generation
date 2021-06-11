@@ -1,36 +1,43 @@
+
 package Turma24;
 
 public class Cachorro extends Animal {
 	
-	private int olfato;
-	private int audicao;
-	
-	public Preguiça (String nome, int idade, int olfato, int audicao)
+	public Cachorro()
 	{
-		super (nome, idade);
-		
-		this.olfato = olfato;
-		this.audicao = audicao;
+		super("Cachorro");
+	}
 	
-		
-		System.out.println("\nNome do animal:" + getNome() + "\nTempo médio de vida: " + getIdade() + " anos" 
-			 + "\nO olfato canino é: " + olfato + "milhão de vezes melhor do que o dos humanos " + 
-				"\nA audição canina é: " + audicao+ "vezes melhor do que a dos humanos");
-}
-
-	public int getOlfato() {
-		return olfato;
+	@Override
+	public void Nome(String nomeAnimal)
+	{
+		System.out.println("\nNome do cachorro: "+nomeAnimal);
 	}
-
-	public void setOlfato(int olfato) {
-		this.olfato = olfato;
+	
+	@Override
+	public void Idade(int idadeAnimal)
+	{
+		System.out.println("\nIdade: "+idadeAnimal);
 	}
-
-	public int getAudicao() {
-		return audicao;
+	
+	@Override
+	public void Som(String somAnimal)
+	{
+		System.out.println("\nSom que o seu cachorro emite: "+somAnimal);
 	}
-
-	public void setAudicao(int audicao) {
-		this.audicao = audicao;
+	
+	public void Corre()
+	{
+		System.out.println("\nUma das características do cachorro é correr!!!");
 	}
+	
+	public void Olfato()
+	{
+		System.out.println("\nO olfato dos cachorros é 1 milhão de vezes melhor do que o dos seres humanos.");
+	}
+	
+	public void Audicao()
+	{
+		System.out.println("\nA audição dos cachorros é 10 vezes melhor do que a dos humanos.");
+	}	
 }
