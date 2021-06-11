@@ -1,36 +1,42 @@
 package Turma24;
 
-public class Cavalo extends Animal {
+public class Cavalo extends Animal{
 	
-	private int velocidade;
-	private int forca;
-	
-	public Preguiça (String nome, int idade, int velocidade, int forca)
+	public Cavalo()
 	{
-		super (nome, idade);
-		
-		this.velocidade = velocidade;
-		this.forca = forca;
+		super("Cavalo");
+	}
 	
-		
-		System.out.println("\nNome do animal:" + getNome() + "\nTempo médio de vida: " + getIdade() + " anos" 
-			 + "\nA velocidade máxima de um cavalo comum é de aproximadamente: " + velocidade + "km/h " + 
-				"\nEles podem exercer uma força proporcional ao seu peso. Um cavalo de: " + forca + "kg, pode arrastar um peso semelhante");
-}
-
-	public int getVelocidade() {
-		return velocidade;
+	@Override
+	public void Nome(String nomeAnimal)
+	{
+		System.out.println("\nNome do cavalo: "+nomeAnimal);
 	}
-
-	public void setVelocidade(int velocidade) {
-		this.velocidade = velocidade;
+	
+	@Override
+	public void Idade(int idadeAnimal)
+	{
+		System.out.println("\nIdade: "+idadeAnimal);
 	}
-
-	public int getForca() {
-		return forca;
+	
+	@Override
+	public void Som(String somAnimal)
+	{
+		System.out.println("\nSom que o seu cavalo emite: "+somAnimal);
 	}
-
-	public void setForca(int forca) {
-		this.forca = forca;
+	
+	public void Corre()
+	{
+		System.out.println("\nUma das características do cavalo é correr!!!");
 	}
-}
+	
+	public void Velocidade()
+	{
+		System.out.println("\nPodem atingir uma velocidade de 88 Km/h.");
+	}
+	
+	public void Forca()
+	{
+		System.out.println("\nEles podem exercer uma força proporcional ao seu peso.");
+	}
+}	
