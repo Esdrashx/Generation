@@ -1,47 +1,42 @@
 package Turma24;
 
-public class Preguiça extends Animal {
+public class Preguica extends Animal{
 	
-	private String alimentacao;
-	private String convivencia;
-	private String locomocao;
-	
-	public Preguiça (String nome, int idade, String alimentacao, String convivencia, String locomocao)
+	public Preguica()
 	{
-		super (nome, idade);
-		
-		this.alimentacao = alimentacao;
-		this.convivencia = convivencia;
-		this.locomocao = locomocao;
+		super("Preguiça");
+	}
 	
-		
-		System.out.println("\nNome do animal:" + getNome() + "\nTempo médio de vida: " + getIdade() + " anos" 
-			 + "\nSua alimentação baseia-se em: " + alimentacao + "\nSão animais de convívio: " + convivencia +
-				"\nSão animais que apresentam movimentos: " + locomocao);
+	@Override
+	public void Nome(String nomeAnimal)
+	{
+		System.out.println("\nNome da preguiça: "+nomeAnimal);
 	}
-
-	public String getAlimentacao() {
-		return alimentacao;
+	
+	@Override
+	public void Idade(int idadeAnimal)
+	{
+		System.out.println("\nIdade: "+idadeAnimal);
 	}
-
-	public void setAlimentacao(String alimentacao) {
-		this.alimentacao = alimentacao;
+	
+	@Override
+	public void Som(String somAnimal)
+	{
+		System.out.println("\nSom que a sua preguiça emite: "+somAnimal);
 	}
-
-	public String getConvivencia() {
-		return convivencia;
+	
+	public void subirArvores()
+	{
+		System.out.println("\nUma das características da preguiça é subir em árvores.");
 	}
-
-	public void setConvivencia(String convivencia) {
-		this.convivencia = convivencia;
+	
+	public void Convivencia()
+	{
+		System.out.println("\nO bicho-preguiça é um animal solitário, sendo visto em duplas apenas na época de reprodução.");
 	}
-
-	public String getLocomocao() {
-		return locomocao;
+	
+	public void Locomocao()
+	{
+		System.out.println("\nSão animais que apresentam movimentos lentos.");
 	}
-
-	public void setLocomocao(String locomocao) {
-		this.locomocao = locomocao;
-	}
-
 }
