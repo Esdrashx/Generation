@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title> Categorias </title>
+    <link rel="stylesheet" href="./css/estilo.css">
+    <script src="./js/funcoes.js"></script>
+</head>
+<body>
+    <div class="margem">
+      <!-- Menu -->
+      <table width="100%" class="menu">
+        <tr>
+    <td align="center" width="25%"><a href="index.html"><img width= "200px" src="./Imagens/Logo.jpeg" alt="GenFlix"></a></td>
+    <td align="center" width="25%"><a href="categorias.html"><font size="6">Categorias</font></a></td>
+    <td align="center" width="25%"><a href="nossosplanos.html"><font size="6">Nossos Planos</font></a></td>
+    <td align="center" width="25%"><a href="faleconosco.html"><font size="6">Fale Conosco</font></a></td> 
+        </tr> 
+    </table>
+    <!-- Fim do menu -->
+    <header>
+    <h1> Categorias </h1>
+    </header>
+    <hr>
+    <table border=0 width="100%" cellpadding=20>
+        <tr>
+            <td rowspan="5" width"20%" valing="top"> <div class="blocoprodutos">
+            <div class="alict"> <h3><font face="Arial">Filmes</font></h3> </div>   
+                <ul>   <div class="alict2">
+                    <li onclick="exibir_todos()">Total (20)</li>
+             <li onclick="exibir_categoria('animacao')"><font face="Arial" size="3">Animação (4)</font></li>
+             <li onclick="exibir_categoria('acao')"><font face="Arial" size="3">Ação (4)</font></li>
+             <li onclick="exibir_categoria('aventura')"><font face="Arial" size="3">Aventura (4)</font></li>
+             <li onclick="exibir_categoria('drama')"><font face="Arial" size="3">Drama (4)</font></li>
+             <li onclick="exibir_categoria('terror')"><font face="Arial" size="3" >Terror (4)</font></li>
+                </div></ul>
+             </div></td></tr>
+        
+            <tr>
+                <td rowspan="5" width"20%" valing="top">
+            
+            <!--Animação-->
+            <div class="categorias" id="animacao" style="display:block;">
+            <tr><td>
+            <td width="20%" align="center" valign="bottom">
+                <footer id="rodape">
+                    <h1>•Animação</h1>
+                    </footer>
+                <img src="./Imagens/Animação/Coraline.jpeg" width="220px" onclick="destaque(this)">
+                <br>
+                <font size="3">Coraline e o Mundo Secreto</font>
+                <hr>
+                <font size="2">10+ / 2009 / 1h 40m</font><br>
+                <font size="4" color="green">Disponível</font> <input type="submit" value="Assistir"><br>   
+            </td>
+            </div>
+            
+            <div class="categorias" id="animacao" style="display:block;">
+            <td width="20%" align="center" valign="bottom">
+                <img src="./Imagens/Animação/Monstros S.A.jpeg" width="220px" onclick="destaque(this)">
+                <br>
+                <font size="3">Monstros S.A.</font>
+                <hr>
+                <font size="2"> Livre / 2001 / 1h 36m </font><br>
+                <font size="4" color="green">Disponível</font> <input type="submit" value="Assistir"><br>  
+            </td>
+            </div>
+
+            <div class="categorias" id="animacao" style="display:block;">
+            <td width="20%" align="center" valign="bottom">
+                <img src="./Imagens/Animação/Raya e o último dragão.jpeg" width="220px" onclick="destaque(this)">
+                <br>
+                <font size="3">Raya e o Último Dragão</font>
+                <hr>
+                <font size="2">10+ / 2021 / 1h 57m</font><br>
+                <font size="4" color="red">Plano Família</font> <input type="submit" value="Assine"><br> 
+            </td>
+            </div>
+
+            <div class="categorias" id="animacao" style="display:block;">
+            <td width="20%" align="center" valign="bottom">
+                <img src="./Imagens/Animação/Zootopia.jpeg" width="220px" onclick="destaque(this)">
+                <br>
+                <font size="3">Zootopia - Essa Cidade é o Bicho</font>
+                <hr>
+                <font size="2">Livre / 2016 / 1h 50m</font><br>
+                <font size="4" color="green">Disponível</font> <input type="submit" value="Assistir"><br>
+                </td></tr> 
+            </td>
+        </div>
+        </table>
+        <!--Fim da Categoria Animação-->
+
+         <!--Ação-->
+        <table border=0 width="100%" cellpadding=20>
+            <tr><td>
+                <div class="categorias" id="acao" style="display:block;">
+            <td width="20%" align="center" valign="bottom">
+                <footer id="rodape">
+                    <h1>•Ação</h1>
+                    </footer>
+                <img src="./Imagens/Acão/Rampage.jpeg" width="220px" onclick="destaque(this)">
+                <br>
+                <font size="3">Rampage: Destruição Total</font>
+                <hr>
+                <font size="2">14+ / 2018 / 1h 55m</font><br>
+                <font size="4" color="green">Disponível</font> <input type="submit" value="Assistir"><br>    
+            </td>
+            </div>
+
+            <div class="categorias" id="acao" style="display:block;">
+            <td width="20%" align="center" valign="bottom">
+                <img src="./Imagens/Acão/Mad Max.jpeg" width="220px" onclick="destaque(this)">
+                <br>
+                <font size="3">Mad Max: Estrada da Fúria</font>
+                <hr>
+                <font size="2">16+ / 2015 / 2h</font><br>
+                <font size="4" color="green">Disponível</font> <input type="submit" value="Assistir"><br>   
+            </td>
+            </div>
+
+            <div class="categorias" id="acao" style="display:block;">
+            <td width="20%" align="center" valign="bottom">
+                <img src="./Imagens/Acão/John Wick 3.jpeg" width="220px" onclick="destaque(this)">
+                <br>
+                <font size="3">John Wick 3: Parabellum</font>
+                <hr>
+                <font size="2">14+ / 2019 / 2h 23m</font><br>
+                <font size="4" color="green">Disponível</font> <input type="submit" value="Assistir"><br>
+            </td>
+            </div>
+            
+            <div class="categorias" id="acao" style="display:block;">
+            <td width="20%" align="center" valign="bottom">
+                <img src="./Imagens/Acão/Resgate.jpeg" width="220px" onclick="destaque(this)">
+                <br>
+                <font size="3">Resgate</font>
+                <hr>
+                <font size="2">16+ / 2020 / 1h 56m</font><br>
+                <font size="4" color="red">Plano Casal</font> <input type="submit" value="Assine"><br>
+            </td></tr>
+            </td> 
+        </div>
+        </table>
+
+            
+        <table border=0 width="100%" cellpadding=20>
+            <!--Fim da categoria Ação-->
+
+            <!--Aventura-->
+            <tr><td>
+                <div class="categorias" id="aventura" style="display:block;">
+            <td width="20%" align="center" valign="bottom">
+                <footer id="rodape">
+                    <h1>•Aventura</h1>
+                    </footer>
+                <img src="./Imagens/Aventura/Harry Potter.jpeg" width="220px" onclick="destaque(this)">
+                <br>
+                <font size="3">Harry Potter e a Pedra Filosofal</font>
+                <hr>
+                <font size="2">Livre / 2001 / 2h 39m</font><br>
+                <font size="4" color="green">Disponível</font> <input type="submit" value="Assistir"><br>
+            </td>
+            </div>
+
+            <div class="categorias" id="aventura" style="display:block;">
+            <td width="20%" align="center" valign="bottom">
+                <img src="./Imagens/Aventura/Narnia.jpeg" width="220px" onclick="destaque(this)">
+                <br>
+                <font size="3">As Crônicas de Nárnia: O Leão, a Feiticeira e o Guarda-Roupa</font>
+                <hr>
+                <font size="2">Livre / 2001 / 2h 39m</font><br>
+                <font size="4" color="green">Disponível</font> <input type="submit" value="Assistir"><br>
+            </td>
+            </div>
+           
+            <div class="categorias" id="aventura" style="display:block;">
+            <td width="20%" align="center" valign="bottom">
+                <img src="./Imagens/Aventura/Peter Pan.jpeg" width="220px" onclick="destaque(this)">
+                <br>
+                <font size="3">Peter Pan</font>
+                <hr>
+                <font size="2">Livre / 2003 / 1h 47m</font><br>
+                <font size="4" color="green">Disponível</font> <input type="submit" value="Assistir"><br>
+            </td>
+            </div>
+
+            <div class="categorias" id="aventura" style="display:block;">
+            <td width="20%" align="center" valign="bottom">
+                <img src="./Imagens/Aventura/Senhor dos Anéis.jpeg" width="220px" onclick="destaque(this)">
+                <br>
+                <font size="3">O Senhor dos Anéis: A Sociedade do Anel</font>
+                <hr>
+                <font size="2">12+ / 2001 / 3h 48m</font><br>
+                <font size="4" color="green">Disponível</font> <input type="submit" value="Assistir"><br>
+                 
+            </td></tr> 
+            </td>
+        </div>
+            <!--Fim da Categoria Aventura-->
+             
+            <!--Drama-->
+             <table border=0 width="100%" cellpadding=20>
+
+                <tr><td>
+                    <div class="categorias" id="drama" style="display:block;">
+                <td width="20%" align="center" valign="bottom">
+                    <footer id="rodape">
+                        <h1>•Drama</h1>
+                        </footer>
+                    <img src="./Imagens/Drama/A culpa é das estrelas.jpeg" width="220px" onclick="destaque(this)">
+                    <br>
+                    <font size="3">A Culpa é das Estrelas</font>
+                    <hr>
+                    <font size="2">12+ / 2014 / 2h 13m</font><br>
+                    <font size="4" color="green">Disponível</font> <input type="submit" value="Assistir"><br>
+                </td>
+                </div>
+    
+                <div class="categorias" id="drama" style="display:block;">
+                <td width="20%" align="center" valign="bottom">
+                    <img src="./Imagens/Drama/Extraordinário.jpeg" width="220px" onclick="destaque(this)">
+                    <br>
+                    <font size="3">Extraordinário</font>
+                    <hr>
+                    <font size="2">10+ / 2017 / 1h 53m</font><br>
+                    <font size="4" color="red">Plano Família</font> <input type="submit" value="Assine"><br>
+                </td>
+                </div>
+               
+                <div class="categorias" id="drama" style="display:block;">
+                <td width="20%" align="center" valign="bottom">
+                    <img src="./Imagens/Drama/O Quarto de Jack.jpeg" width="220px" onclick="destaque(this)">
+                    <br>
+                    <font size="3">O Quarto de Jack</font>
+                    <hr>
+                    <font size="2">14+ / 2015 / 1h 58m</font><br>
+                    <font size="4" color="green">Disponível</font> <input type="submit" value="Assistir"><br> 
+                </td>
+                </div>
+    
+                <div class="categorias" id="drama" style="display:block;">
+                <td width="20%" align="center" valign="bottom">
+                    <img src="./Imagens/Drama/Sempre ao seu lado.jpeg" width="220px" onclick="destaque(this)">
+                    <br>
+                    <font size="3">Sempre ao Seu Lado</font>
+                    <hr>
+                    <font size="2">Livre / 2009 / 1h 33m</font><br>
+                    <font size="4" color="green">Disponível</font> <input type="submit" value="Assistir"><br>
+                     
+                </td></tr> 
+                </td>
+            </div>
+                <!--Fim da Categoria Drama-->
+                 
+                <!--Terror-->
+                <table border=0 width="100%" cellpadding=20>
+          
+                    <tr><td>
+                        <div class="categorias" id="terror" style="display:block;">
+                    <td width="20%" align="center" valign="bottom">
+                        <footer id="rodape">
+                            <h1>•Terror</h1>
+                            </footer>
+                        <img src="./Imagens/Terror/A Freira.jpeg" width="220px" onclick="destaque(this)">
+                        <br>
+                        <font size="3">A Freira</font>
+                        <hr>
+                        <font size="2">14+ / 2018 / 1h 36m</font><br>
+                        <font size="4" color="green">Disponível</font> <input type="submit" value="Assistir"><br>
+                    </td>
+                    </div>
+        
+                    <div class="categorias" id="terror" style="display:block;">
+                    <td width="20%" align="center" valign="bottom">
+                        <img src="./Imagens/Terror/IT 2.jpeg" width="220px" onclick="destaque(this)">
+                        <br>
+                        <font size="3">It – Capítulo Dois</font>
+                        <hr>
+                        <font size="2">16+ / 2019 / 2h 50m</font><br>
+                        <font size="4" color="red">Plano Casal</font> <input type="submit" value="Assine"><br>
+                    </td>
+                    </div>
+                   
+                    <div class="categorias" id="terror" style="display:block;">
+                    <td width="20%" align="center" valign="bottom">
+                        <img src="./Imagens/Terror/O Exorcista.jpeg" width="220px" onclick="destaque(this)">
+                        <br>
+                        <font size="3">O Exorcista</font>
+                        <hr>
+                        <font size="2">14+ / 1973 / 2h 13m</font><br>
+                        <font size="4" color="green">Disponível</font> <input type="submit" value="Assistir"><br>
+                    </td>
+                    </div>
+        
+                    <div class="categorias" id="terror" style="display:block;">
+                    <td width="20%" align="center" valign="bottom">
+                        <img src="./Imagens/Terror/Quando as luzes se apagam.jpeg" width="220px" onclick="destaque(this)">
+                        <br>
+                        <font size="3">O Senhor dos Anéis: A Sociedade do Anel</font>
+                        <hr>
+                        <font size="2">14+ / 2016 / 1h 21m</font><br>
+                        <font size="4" color="green">Disponível</font> <input type="submit" value="Assistir"><br>
+                         
+                    </td></tr> 
+                    </td>
+                </div>         
+                </table>
+    <!--Fim das Categorias--> 
+
+    <tr><td>
+    <br> <br> <br> <br> <br>
+    <br> <br> <br> <br> <br>
+    <br> <br> <br> <br> <br>
+    <footer id="rodape"> 
+        <h3 id="formasdepagamento">Formas de Pagamento</h3>
+        <img src="./imagens/logo pagamento.jpg" alt="Formas de Pagamento" width ="500px">
+        <p> &copy; GenFlix </p>
+      </footer>
+    </div>
+</body>
+</html>
