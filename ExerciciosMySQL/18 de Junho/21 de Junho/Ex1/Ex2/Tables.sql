@@ -14,7 +14,7 @@ CREATE TABLE tabela_pizza(
     preco FLOAT NOT NULL,
     estoque BOOLEAN NOT NULL,
     validade DATE NOT NULL,
-    cp_categoria INT NOT NULL,
+    fk_categoria INT NOT NULL,
     PRIMARY KEY (id_pizza),
-    FOREIGN KEY(cp_categoria) REFERENCES tabela_categoria(id_categoria)
+    FOREIGN KEY(fk_categoria) REFERENCES tabela_categoria(id_categoria)
 );
