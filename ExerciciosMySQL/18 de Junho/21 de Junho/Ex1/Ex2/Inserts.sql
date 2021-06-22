@@ -10,7 +10,7 @@ INSERT INTO tabela_categoria(montar_pizza, quantidade)
     
 SELECT * FROM tabela_categoria;
 
-INSERT INTO tabela_pizza(nome_pizza, preco, estoque, validade, cp_categoria)
+INSERT INTO tabela_pizza(nome_pizza, preco, estoque, validade, fk_categoria)
 	VALUES
 	("Mussarela", 19.90, TRUE, '2021-05-20', 2),
     ("Atum", 30.50, TRUE, '2021-04-20', 2),
